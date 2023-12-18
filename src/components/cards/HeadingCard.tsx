@@ -22,6 +22,9 @@ const HeadingCard = ({}) => {
               name="date-input"
               date={state.date}
               propsConfigs={datepickerPropsConfigs}
+              configs={{
+                dateFormat: 'dd-MM-yyyy'
+              }}
               onDateChange={(date) => { dispatch({type:'CHANGE_DATE', value: date}) }}
             />
           </div>
