@@ -1,5 +1,15 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env file
+
+`BASE_URL`= https://newsapi.org/v2
+`API_KEY`= YOUR_API_KEY
+`NEXTAUTH_SECRET`=its_secret_auth_required
+`NEXTAUTH_URL`=http://localhost:3000
+
+
 ## Getting Started
 
 First, run the development server:
