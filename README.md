@@ -2,13 +2,14 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Environment Variables
 
-To run this project, you will need to add the following environment variables to your .env file
+To run this project, you will need to add the following environment variables to your .env.local file
 
+```bash
 `BASE_URL`= https://newsapi.org/v2
 `API_KEY`= YOUR_API_KEY
 `NEXTAUTH_SECRET`=its_secret_auth_required
 `NEXTAUTH_URL`=http://localhost:3000
-
+```
 
 ## Getting Started
 
