@@ -21,3 +21,8 @@ export type ArticleType = {
     publishedAt: string,
     content: string
 }
+
+export type QueryResponseType = {
+    success: boolean,
+    data: ArticleType[]
+}

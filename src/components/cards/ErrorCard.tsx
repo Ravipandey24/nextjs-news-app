@@ -2,9 +2,9 @@ import { Card, CardBody, Text } from "@chakra-ui/react";
 
 const ErrorCard = ({}) => {
   return (
-    <Card width='100%'>
+    <Card color="red.500" backgroundColor='red.100'>
       <CardBody>
-        <Text>View a summary of all your customers over the last month.</Text>
+        <Text fontWeight='600'>Something Went Wrong with API!!</Text>
       </CardBody>
     </Card>
   );

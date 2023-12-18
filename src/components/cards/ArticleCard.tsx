@@ -33,14 +33,14 @@ const ArticleCard: FC<CardProps> = ({ articleData }) => {
         />
         <Stack mt="6" spacing="3">
           <Link href={articleData.url} size="md" target="_blank">
-            <h3 className="text-lg font-semibold">{articleData.title}</h3>
+            <h3 className="text-lg teal.500 font-semibold">{articleData.title}</h3>
           </Link>
           <Text>{articleData.description}</Text>
         </Stack>
       </CardBody>
       <CardFooter>
         <div className="w-full flex justify-between">
-          <Text color="purple.600" fontSize="medium">
+          <Text color="teal.600" fontSize="medium">
             {articleData.source.name}
           </Text>
           <Text fontSize="medium">{formatISODate(articleData.publishedAt)}</Text>

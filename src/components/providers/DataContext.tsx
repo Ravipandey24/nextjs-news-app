@@ -1,6 +1,6 @@
 "use client";
 
-import { getOneMonthAgo } from "@/lib/uitls";
+import { getOneMonthAgo, getOneWeekAgo } from "@/lib/uitls";
 import {
   Dispatch,
   createContext,
@@ -11,7 +11,7 @@ import {
 
 const initialState = {
   query: "",
-  date: getOneMonthAgo(),
+  date: getOneWeekAgo(),
 };
 
 type DispatchAction = {

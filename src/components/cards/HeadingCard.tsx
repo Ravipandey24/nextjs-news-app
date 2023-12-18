@@ -5,6 +5,7 @@ import { useState } from "react";
 import { SingleDatepicker } from "chakra-dayzed-datepicker";
 import { getOneMonthAgo } from "@/lib/uitls";
 import { useDataContext } from "../providers/DataContext";
+import { datepickerPropsConfigs } from "@/config/layout";
 
 const HeadingCard = ({}) => {
   const { state, dispatch } = useDataContext()!;
@@ -20,6 +21,7 @@ const HeadingCard = ({}) => {
             <SingleDatepicker
               name="date-input"
               date={state.date}
+              propsConfigs={datepickerPropsConfigs}
               onDateChange={(date) => { dispatch({type:'CHANGE_DATE', value: date}) }}
             />
           </div>

@@ -11,21 +11,23 @@ interface UserCardProps {
 
 const UserCard: FC<UserCardProps> = ({ username }) => {
   return (
-    <div className="flex shadow-md border border-gray-300 items-center space-x-1 rounded-md p-2 h-10">
-      <div className="h-7 w-7 border border-gray-300 rounded-md p-1">
-        <UserIcon></UserIcon>
+    <div className="flex shadow-md border gap-3 border-gray-300 items-center justify-between space-x-1 rounded-md p-2 h-10">
+      <div className="flex items-center gap-2">
+        <div className="h-6 w-6">
+          <UserIcon></UserIcon>
+        </div>
+        <p className="text-base text-gray-600 leading-none">{username}</p>
       </div>
-      <p className="text-lg text-gray-500 leading-none">{username}</p>
       <Button
         size="sm"
-        padding="1px"
+        padding="0.5px"
         bgColor="white"
-        _hover={{ bgColor: "gray.200" }}
+        _hover={{ bgColor: "gray.100" }}
         onClick={() => {
           signOut();
         }}
       >
-        <a className="h-5 w-5 text-gray-500">
+        <a className="h-5 w-5">
           <LogoutIcon></LogoutIcon>
         </a>
       </Button>

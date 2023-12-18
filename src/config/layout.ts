@@ -1,52 +1,32 @@
-import { Prata } from "next/font/google";
+import { Cinzel } from "next/font/google";
 
-export const headingFont = Prata({
-    weight: ["400"],
+export const headingFont = Cinzel({
+    weight: ["600"],
     subsets: ["latin"],
     display: "swap",
   });
 
 export const datepickerPropsConfigs = {
+  dateNavBtnProps: {
+    _hover: {
+      background: "teal.200",
+    },
+  },
   dayOfMonthBtnProps: {
     defaultBtnProps: {
       _hover: {
-        background: "blue.600",
-      },
+        background: 'teal.200',
+      }
     },
     selectedBtnProps: {
-      background: "#0085f230",
+      background: "teal.400",
+      color: "white",
     },
-  },
-  dateNavBtnProps: {
-    _hover: {
-      background: "#0085f230",
+    todayBtnProps: {
+      background: "gray.400",
     },
-  },
-  popoverCompProps: {
-    popoverContentProps: {
-      background: "#10172b",
-      color: "#94a3bb",
-      boxShadow: "var(--chakra-shadows-base)",
+    inputProps: {
+      focusBorderColor:"teal.400"
     },
-  },
-  calendarPanelProps: {
-    wrapperProps: {
-      borderColor: "green",
-    },
-    contentProps: {
-      borderWidth: 0,
-    },
-    headerProps: {
-      padding: "5px",
-    },
-    dividerProps: {
-      display: "none",
-    },
-  },
-  weekdayLabelProps: {
-    fontWeight: "normal",
-  },
-  dateHeadingProps: {
-    fontWeight: "semibold",
   },
 };
